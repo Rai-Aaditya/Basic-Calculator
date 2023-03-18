@@ -6,31 +6,95 @@ html, body {
 font-family: 'Nova Round', cursive;
 font-family: 'Roboto', sans-serif;
 }
-.container{
+.light .container{
     background-color: bisque;
     border: 1px solid black;
     padding: 10px;
     width: fit-content;
     border-radius: 10px;
 }
+.dark .container{
+    background-color: black;
+    border: 1px solid yellow;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
+.light .operator{
+    color: rgb(255, 0, 255);
+    font-weight: 800;
+    border-color: rgb(255, 0, 255);
+}
+.dark .operator{
+    color: rgb(4, 41, 253);
+    font-weight: 800;
+    border-color: rgb(4, 41, 253);
+}
+.light .number{
+    color: red;
+    border-color: red;
+}
+.dark .number{
+    color: maroon;
+    border-color: maroon;
+}
+.light .equal{
+    color: green;
+    border-color: green;
+}
+.dark .equal{
+    color: rgb(64, 103, 5);
+    border-color: greenyellow;
+}
+
 .button{
+    font-weight: 500;
     padding: 20px;
     width: 66px;
     margin: 0 3px;
     border: 2px solid black;
-    border-radius: 9px;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px;
 }
+
 
 .row{
     margin: 8px 0;
 }
-.row input {
+.light .row input {
+    background-color: rgb(220, 215, 215);
+    color: white;
     margin: 0;
     width: 277px;
-    padding: 0px 6px;
+    padding: 10px 6px;
     border: 2px solid black;
     border-radius: 5px;
     font-size: 30px;
 }
+.dark .row input {
+    background-color: white;
+    color: black;
+    margin: 0;
+    width: 277px;
+    padding: 10px 6px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    font-size: 30px;
+}
+.circle-btn{
+    width: 10px;
+    height: 10px;   
+    border-radius: 50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .circle-btn:hover {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+  }
+  

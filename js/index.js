@@ -18,3 +18,24 @@ Array.from(buttons).forEach((button)=>{
     })
 })
 
+const toggler = document.getElementById('toggler');
+toggler.addEventListener('click', ()=>{
+    if(document.body.classList.contains('light')){
+        document.body.classList.remove('light');
+        document.body.classList.toggle('dark');
+        const bodyChildren = document.body.querySelectorAll('*');
+        bodyChildren.forEach((child)=>{
+            if(child.classList.contains('light')) child.classList.remove('light');
+            child.classList.toggle('dark');
+        })
+    }
+    else{
+        document.body.classList.remove('dark');
+        document.body.classList.toggle('light');
+        const bodyChildren = document.body.querySelectorAll('*');
+        bodyChildren.forEach((child)=>{
+            if(child.classList.contains('dark')) child.classList.remove('dark');
+            child.classList.toggle('light');
+        })
+    }
+})

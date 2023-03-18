@@ -18,3 +18,24 @@
 .items-center{
     align-items: center;
 }
+
+
+.text-right{
+    text-align: right;
+}
+
+
+.dark #toggler{
+    color: white;
+    background-color: white;
+}
+.light #toggler{
+    color: black;
+    background-color: black;
+}
+#toggler{   
+    border: none;
+    cursor: pointer;
+    align-self: self-end;
+    margin-right: 10px;
+}   

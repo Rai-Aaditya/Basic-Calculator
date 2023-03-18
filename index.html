@@ -6,43 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />      
     <title>Calculator</title>
 </head>
-<body>
+<body class="light">
     <h1 class="text-center">Calculator</h1>
     <div class="container bg-red mx-auto flex flex-col items-center">
         <div class="row">
             <input type="text" class="input"/>
         </div>
+        <button id="toggler" class="circle-btn"></button>
         <div class="row">
-            <button class="button">C</button>
-            <button class="button">%</button>
-            <button class="button">M+</button>
-            <button class="button">M-</button>
+            <button class="button operator">C</button>
+            <button class="button operator">%</button>
+            <button class="button operator">M+</button>
+            <button class="button operator">M-</button>
         </div>
         <div class="row">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">/</button>
+            <button class="button number">7</button>
+            <button class="button number">8</button>
+            <button class="button number">9</button>
+            <button class="button operator">/</button>
         </div>
         <div class="row">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">*</button>
+            <button class="button number">4</button>
+            <button class="button number">5</button>
+            <button class="button number">6</button>
+            <button class="button operator">*</button>
         </div>
         <div class="row">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">-</button>
+            <button class="button number">1</button>
+            <button class="button number">2</button>
+            <button class="button number">3</button>
+            <button class="button operator">-</button>
         </div>
         <div class="row">
-            <button class="button">0</button>
-            <button class="button">.</button>
-            <button class="button">+</button>
-            <button class="button">=</button>
+            <button class="button number">0</button>
+            <button class="button operator">.</button>
+            <button class="button operator">+</button>
+            <button class="button equal">=</button>
         </div>
 
     </div>
